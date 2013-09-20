@@ -1,0 +1,109 @@
+/**
+ * Reset
+ * @Author: honglei@live.com
+ */
+html{
+	color:#000;
+	background:#FFF;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+figure,
+td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,
+img {
+	border:0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+del,
+ins,
+mark,
+small,
+sup,
+sub,
+var {
+	font-style:normal;
+	font-weight:normal;
+	text-decoration: none;
+	background: none;
+	font-size: 100%;
+	vertical-align: middle;
+}
+li {
+	list-style:none;
+}
+caption,
+th {
+	text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,
+q:after {
+	content:'';
+}
+abbr,
+acronym {
+	border:0;
+	font-variant:normal;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+}
+legend {
+	color:#000;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+	

@@ -1,0 +1,21 @@
+/*Plus*/
+.vp-cf:after {
+	@include clearfix();
+}
+
+.vp-margin-5 {
+	margin: 5px;
+}
+.vp-margin-10 {
+	margin: 10px;
+}
+
+.vp-pos-right {
+	position: absolute;
+	top: 50%;
+	right: .6em;
+}
+.vp-pos-left {
+	@extend .vp-pos-right;
+	left: .4em;
+}

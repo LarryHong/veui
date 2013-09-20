@@ -1,0 +1,47 @@
+/**
+ * Frame Style
+ * @Author: honglei@live.com
+ * @Style Group: Mods
+ */
+.vm-hd {
+	position: relative;
+	height: $header_height;
+	border-top: $header_border_top;
+	border-bottom: $header_border_bottom;
+	padding: $header_padding;
+	@include background($header_background, $header_background_type);
+	h1 {
+		text-align: center;
+		font-size: $header_font_size;
+		font-weight: $header_font_weight;
+		color: $header_font_color;
+		text-shadow: $header_font_shadow;
+	}
+}
+
+/*Footer*/
+.vm-ft {
+	height: $footer_height;
+	padding: $footer_padding;
+	@include background($footer_background, $footer_background_type);
+	text-align: center;
+	font-size: $footer_font_size;
+	font-weight: $footer_font_weight;
+	color: $footer_font_color;
+	text-shadow: $footer_font_shadow;
+}
+
+/*Head*/
+.vm-head {
+	position: relative;
+	padding: $head_padding;
+	border-top: $head_border_top;
+	border-bottom: $head_border_bottom;
+	@include background($head_background, $head_background_type);
+	margin: 0;
+	z-index: 12;
+	font-size: $head_font_size;
+	font-weight: $head_font_weight;
+	color: $head_font_color;
+	text-shadow: $head_font_shadow;
+}

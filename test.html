@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style>
+.a,
+.b {
+	margin-left: 160px;
+	width: 100%;
+}
+.doc {
+	position: relative;
+	overflow: hidden;
+}
+.a {
+	background: blue;
+	height: 100px;
+}
+.b {
+	background: red;
+	height: 200px;
+}
+.c {
+	background: yellow;
+	height: 300px;
+	width: 150px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.no-side .a,
+.no-side .b {
+	margin-left: 0;
+}
+.no-side .c {
+	display: none;
+}
+/*
+.no-side {
+	margin-left: -160px;
+}
+*/
+</style>
+</head>
+<body>
+<div class="doc no-side">
+	<div class="c">c</div>
+	<div class="a">马来西亚，简称大马（Malaysia），是东南亚的一个由十三个州和三个联邦直辖区组成的联邦体制国家。首都吉隆坡，联邦政府所在地则位于布城。1957年（丁酉年）8月31日独立。马来西亚共分为两大部分：一个是位于马来半岛的西马来西亚，另一个是东马来西亚。西半部位于马来半岛，常称为“西马”，北接泰国，南部隔着柔佛海峡，与新加坡和印尼廖内群岛接壤；东半部常被称为“东马”，南邻印度尼西亚的加里曼丹。</div>
+	<div class="b">泰国全称泰王国（泰文：ราชอาณาจักรไทย）[1]，位于东南亚中南半岛中部，它的西部与北部和缅甸和安达曼海接壤，东北边是老挝，东南是柬埔寨，南边狭长的半岛与马来西亚相连。
+	泰国原名暹罗，1949年5月11日，泰国人用自己民族的名称，把“暹罗”改为“泰”，主要是取其“自由”之意。
+	泰国是佛教之国，大多数泰国人信奉上座部佛教。佛教徒占全国人口九成以上。
+	泰国乃东南亚国家联盟成员国之一，实行自由经济政策，在20世纪90年代经济突飞猛进，跻身成为“亚洲四小虎”之一。[1]泰国是世界最闻名的旅游胜地之一，旅游业在泰国观光旅游局的大力推动下，成为泰国主要的经济收入来源。</div>
+</div>
+</body>
+</html>
+
+
+<script>
+        var url = "http://count.honglei.net?",
+            attr = [];
+        attr.push("r="+Date.parse(new Date()));
+        function getCookie(){
+            var t,o={},c=document.cookie.split(";");
+            console.log(c);
+            for(var i in c){
+                t=c[i].split("=");
+                o[t[0]] = t[1];
+            }
+            return o;
+        }
+        //统计带宽状态
+        (function(){
+            var con = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {tyep:'none'};
+            var type_text = ['unknown','ethernet','wifi','2g','3g','4g','none'];
+
+            if(typeof(con.type) == "number"){
+                con.type_text = type_text[con.type];
+            }else{
+                con.type_text = con.type;
+            }
+            if(typeof(con.bandwidth) == "number"){
+                if(con.bandwidth > 10){
+                    con.type = 'wifi';
+                }else if(con.bandwidth > 2){
+                    con.type = '3g';
+                }else if(con.bandwidth > 0){
+                    con.type = '2g';
+                }else if(con.bandwidth == 0){
+                    con.type = 'none';
+                }else{
+                    con.type = 'unknown';
+                }
+            }
+            attr.push("net="+con.type);
+        })();
+        attr.push("source="+getCookie()['utm_source']);
+        $("body").append('<img src="'+url+attr.join("&")+'">');
+    </script>

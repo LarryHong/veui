@@ -1,0 +1,98 @@
+//Config
+$version : 1.0;
+$skin : ios6;
+
+//Frame Config
+
+$header_height : 1.3em;
+$header_border_top : 1px solid #3e87d9;
+$header_border_bottom : 1px solid #3e87d9;
+$header_padding : .55em 0 .7em;
+$header_background : #3e87d9;
+$header_background_type : gradient;
+$header_font_size : 128.57%;
+$header_font_weight : bold;
+$header_font_color : #fff;
+$header_font_shadow : 1px 1px 3px rgba(0, 0, 0, .5);
+
+$footer_height : 1em;
+$footer_padding : .3em 0 .7em;
+$footer_background : #111;
+$footer_background_type : gradient;
+$footer_font_size : 85.7%;
+$footer_font_weight : normal;
+$footer_font_color : #fff;
+$footer_font_shadow : none;
+
+$head_padding : .45em .6em;
+$head_background : #497BAE;
+$head_background_type : gradient;
+$head_border_top : 1px solid #456F9A;
+$head_border_bottom : 1px solid #456F9A;
+$head_font_size : 114.28%;
+$head_font_weight : normal;
+$head_font_color : #fff;
+$head_font_shadow : none;
+
+//List Config
+
+$list_font_size : 128.57%;
+$list_font_color : #656565;
+$list_font_weight : normal;
+$list_font_shadow : none;
+$list_font_weak_size : 66.67%;
+$list_font_value_color : #2E3092;
+
+$list_background : #fff;
+$list_background_type : color;
+$list_background_hover : #fff;
+
+$list_border_color : #f8f8f8;
+$list_padding : .5em;
+
+$list_img_size_width : 73px;
+$list_img_size_height : 73px;
+
+$list_img_border_width : 1px;
+$list_img_border_color : #ccc;
+$list_img_margin : 2px;
+$list_img_padding : 0;
+
+$list_radius : 8px;
+
+
+//Tabs Config
+
+$tab_hd_font_size : 128.57%;
+$tab_hd_font_color : #2f3e46;
+$tab_hd_font_weight : bold;
+$tab_hd_font_shadow : 0 1px 0 #fff;
+$tab_hd_border_color : #ccc;
+$tab_hd_border_width : 1px 0;
+$tab_hd_background : #eee;
+$tab_hd_background_selected : darken($tab_hd_background, 10);
+$tab_hd_background_type : gradient;
+$tab_hd_padding : .5em;
+
+$tab_corner_hd_radius : .6em;
+$tab_corner_hd_background : #eee;
+$tab_corner_hd_background_selected : #fff;
+$tab_corner_hd_background_type : color;
+$tab_corner_hd_border_color : #ccc;
+
+//Icon Config
+
+$cicon_color : #fff;
+$cicon_grey_color : #ccc;
+$cicon_arrow_size : 8px;
+
+$icon_round_background_color : rgba(0, 0, 0, .4);
+$icon_round_radius : 9.5px;
+
+$icon_dot_radius : 4.5px;
+$icon_dot_background_color : #6facd5;
+$icon_dot_background_type : gradient;
+$icon_dot_border : 1px solid #456f9a;
+
+$icon_img : "../imgs/icons.svg";
+$icon_img_spacing : 50px;

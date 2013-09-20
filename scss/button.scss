@@ -1,0 +1,135 @@
+$btn_background : #3e87d9;
+$btn_background_type : gradient;
+$btn_border : 1px solid #3e87d9;
+$btn_padding_width : 16px;
+$btn_padding_height : 7px;
+$btn_radius : 10px;
+$btn_color : #fff;
+
+
+/**
+ * Button Style
+ * @Author: honglei@live.com
+ * @Style Group: Plus
+ */
+.vm-btn {
+	@include background($btn_background, $btn_background_type);
+	border: $btn_border;
+	border-radius: $btn_radius;
+	padding: $btn_padding_height $btn_padding_width;
+	color: $btn_color;
+	display: inline-block;
+	text-decoration: none;
+	vertical-align: middle;
+	//box-sizing: border-box;
+}
+button.vm-btn {
+	padding: $btn_padding_height - 1px $btn_padding_width - 3px;
+}
+input.vm-btn {
+	padding: $btn_padding_height $btn_padding_width - 3px;
+}
+ 
+.vm-btn-block {
+	@extend .vm-btn;
+	display: block;
+	text-align: center;
+	padding: $btn_padding_height 0;
+}
+button.vm-btn-block {
+	padding: $btn_padding_height - 1px 0;
+	width: 100%;
+}
+ /*
+ .vm-btn-block,
+ .vm-btn-group .vm-btn {
+ 	display: block;
+ 	padding-left: 0;
+ 	padding-right: 0;
+ }
+ .vm-btn-block button {
+ 	width: 100%;
+ 	height: 100%;
+ 	top: 0;
+ 	left: 0;
+ 	position: absolute;
+ 	cursor: pointer;
+ 	margin: 0;
+ 	border: none;
+ 	background: none;
+ 	box-shadow: none;
+ }
+ .vm-btn-iconl {
+ 	padding-left: 30px;
+ }
+ 
+ .vm-btn-group,
+ .vm-btn-grouph,
+ .vm-btn-grouph-block {
+ 	margin: 10px;
+ }
+ .vm-btn-grouph {
+ 	display: inline-block;
+ }
+ .vm-btn-grouph:after,
+ .vm-btn-grouph-block:after {
+ 	content:'.';
+ 	visibility:hidden;
+ 	display:block;
+ 	height:0;
+ 	clear:both;
+ }
+ .vm-btn-group .vm-btn,
+ .vm-btn-grouph .vm-btn,
+ .vm-btn-grouph-block .vm-btn {
+ 	margin: 0;
+ 	box-shadow: none;
+ 	border-bottom-width: 0;
+ 	border-radius: 0;
+ }
+ .vm-btn-group .ve-first {
+ 	border-radius: 8px 8px 0 0;
+ }
+ .vm-btn-group .ve-last {
+ 	border-bottom-width: 1px;
+ 	border-radius: 0 0 8px 8px;
+ }
+ .vm-btn-grouph .vm-btn,
+ .vm-btn-grouph-block .vm-btn {
+ 	float: left;
+ 	border-width: 1px 0 1px 1px;
+ }
+ .vm-btn-grouph-block .vm-btn {
+ 	padding-left: 0;
+ 	padding-right: 0;
+ 	text-align: center;
+ 	margin-right: -1px;
+ }
+ .vm-btn-grouph-block .ve-last {
+ 	margin-left: -2px;
+ }
+ .vm-btn-grouph .ve-first,
+ .vm-btn-grouph-block .ve-first {
+ 	border-radius: 8px 0 0 8px;
+ }
+ .vm-btn-grouph .ve-last,
+ .vm-btn-grouph-block .ve-last {
+ 	border-right-width: 1px;
+ 	border-radius: 0 8px 8px 0;
+ }
+ 
+ .vm-btn-hoop {
+ 	display: inline-block;
+ 	width: 19px;
+ 	height: 19px;
+ 	border-radius: 1em;
+ 	background: #fff;
+ 	background: -moz-linear-gradient(#74B042, #56A00E) repeat scroll 0 0 #56A00E;
+ 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,#74B042), color-stop(1,#56A00E));
+ 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#74B042',EndColorStr='#56A00E')";
+ 	border: 1px solid #3B6F07;
+ 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+ 	margin-top: -14px;
+ 	padding: 3px;
+ }
+ */

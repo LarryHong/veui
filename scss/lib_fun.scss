@@ -1,0 +1,37 @@
+//清除浮动
+@mixin clearfix(){
+	content:'';
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+//渐变
+@mixin gradient($bg){
+	$from : lighten($bg, 12%);
+	$to : $bg;
+	background: -moz-linear-gradient(center top, $from, $to) repeat scroll 0 0 $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$from}', EndColorStr='#{$to}')";
+}
+//神一般的background
+@mixin background($bg: #fff, $type: color){
+	@if $type == url {
+		background: url($bg);
+	}@else if $type == gradient {
+		@include gradient($bg);
+	}@else {
+		background: $bg;
+	}
+}
+//文字截取长度，超出用...表示
+@mixin nowrap {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+//旋转
+@mixin transform-rotate($angle:0){
+	-webkit-transform: rotate(#{$angle}deg);
+	-moz-transform: rotate(#{$angle}deg);
+}

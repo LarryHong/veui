@@ -1,0 +1,28 @@
+.vm-pagination {
+	position: relative;
+	text-align: center;
+	height: 38px;
+}
+.vm-pagination-prev,
+.vm-pagination-next {
+	position: absolute;
+	top: 0;
+	background: #0063dc;
+	color: #fff;
+	padding: .4em 0 .6em;
+	text-decoration: none;
+	width: 86px;
+	text-align: center;
+	border-radius: 5px;
+}
+.vm-pagination-prev {
+	left: .2em;
+}
+.vm-pagination-next {
+	right: .2em;
+}
+.vm-pagination-info {
+	line-height: 26px;
+	font-size: 80%;
+	color: #666;
+}

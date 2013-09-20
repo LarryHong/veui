@@ -1,0 +1,60 @@
+@import "lib_fun";
+@import "lib_ios6";
+
+$demo_height : 50px;
+$demo_background_color : #fadb4e;
+$demo_background_type : gradient;
+$demo_border_color : #f7c942;
+$demo_font_color : #333;
+$demo_font_shadow : 0 1px 0 #fff;
+$demo_padding : .5em;
+
+$demo_mod_margin : 1em .5em;
+
+$demo_intro_margin : 1em .5em;
+
+$demo_code_background_color : #eee;
+$demo_code_background_type : color;
+$demo_code_padding : .8em;
+$demo_code_font_size : 12px;
+$demo_code_em_color : #999;
+$demo_code_strong_color : red;
+
+/**
+ * Grids Style
+ * @Author: honglei@live.com
+ * @Style Group: Demo
+ */
+.vdemo-block {
+	height: $demo_height;
+	border: 1px solid $demo_border_color;
+	color: $demo_font_color;
+	text-shadow: $demo_font_shadow;
+	padding: $demo_padding;
+	
+	@include background($demo_background_color, $demo_background_type);
+}
+
+.vdemo-mod {
+	margin: $demo_mod_margin;
+	display: none;
+}
+
+.vdemo-intro {
+	margin: $demo_intro_margin;
+	display: none;
+}
+
+.vdemo-code {
+	padding: $demo_code_padding;
+	font-size: $demo_code_font_size;
+	overflow: hidden;
+	width: 280px;
+	@include background($demo_code_background_color, $demo_code_background_type);
+	em {
+		color: $demo_code_em_color;
+	}
+	strong {
+		color: $demo_code_strong_color;
+	}
+}

@@ -1,0 +1,50 @@
+/**
+ * List Style
+ * @Author: honglei@live.com
+ * @Style Group: Mods
+ */
+.vm-tabs-hd {
+	display: block;
+	font-size: $tab_hd_font_size;
+	font-weight: $tab_hd_font_weight;
+	text-shadow: $tab_hd_font_shadow;
+	border: 0 solid $tab_hd_border_color;
+	border-width: $tab_hd_border_width;
+	@include nowrap;
+	@include background($tab_hd_background, $tab_hd_background_type);
+}
+.vm-tabs-hd-item {
+	display: block;
+	text-decoration: none;
+	padding: $tab_hd_padding*1.1 $tab_hd_padding $tab_hd_padding*.9;
+	text-align: center;
+	
+	color: $tab_hd_font_color;
+	border: 0 solid $tab_hd_border_color;
+	border-right-width: 1px;
+	&.vc-selected {
+		@include background($tab_hd_background_selected, $tab_hd_background_type);
+	}
+}
+.vm-tabs-hd-corner {
+	.vm-tabs-hd-item {
+		border-radius: $tab_corner_hd_radius $tab_corner_hd_radius 0 0;
+		border: 1px solid $tab_corner_hd_border_color;
+		@include background($tab_corner_hd_background, $tab_corner_hd_background_type);
+	}
+	.vc-selected {
+		@include background($tab_corner_hd_background_selected, $tab_corner_hd_background_type);
+		border-bottom: 0;
+		&:after {
+			content: "";
+			display: block;
+			height: 1px;
+		}
+	}
+}
+.vm-tabs-bd-item {
+	display: none;
+	&.vc-selected {
+		display: block;
+	}
+}

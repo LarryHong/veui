@@ -1,0 +1,128 @@
+body,button {
+	font: 12px Helvetica,Arial,sans-serif;
+}
+h1 {
+	font-size: 150%;
+}
+h2 {
+	font-size: 125%;
+}
+h3 {
+	font-size: 112.5%;
+}
+h5 {
+	font-size: 87.5%;
+}
+h6 {
+	font-size: 75%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 1em 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+dfn {
+	font-style: italic;
+	font-weight: bold;
+}
+blockquote,
+ul,
+ol,
+dl {
+	margin:1em;
+}
+ol,
+ul,
+dl {
+	margin-left:2em;
+}
+ol li {
+	list-style: decimal outside;	
+}
+ul li {
+	list-style: disc outside;
+}
+dl dt {
+	font-weight: bold;
+	margin: 1em 0 .5em;
+}
+dl dd {
+	margin-left:1em;
+}
+th,
+td {
+	border: 1px solid #000;
+	padding: .5em;
+}
+th {
+	font-weight: bold;
+	text-align: center;
+}
+sup,
+sub,
+small {
+	font-size: 84.61%;
+}
+sup {
+	vertical-align:top;
+}
+sub {
+	vertical-align:bottom;
+}
+del {
+	text-decoration: line-through;
+}
+ins {
+	text-decoration: underline;
+}
+mark {
+	background: #ff0;
+	padding: 0 .1em;
+}
+p,
+pre {
+	margin-bottom: 1em;
+}
+input[type=text],
+input[type=password],
+textarea {
+	width:12.25em;
+}
+abbr,
+acronym {
+	border-bottom:1px dotted #000;
+	cursor:help;
+}
+fieldset {
+	border: 1px solid #ccc;
+	padding: .5em;
+}
+legend {
+	padding: 0 .4em;
+}
+figure {
+	margin: 1.2em 2em;
+}
+
+.clearfix:after {
+	content:'';
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}

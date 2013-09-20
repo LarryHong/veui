@@ -1,0 +1,21 @@
+/*Bottom Tools*/
+.vm-bt {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3.6em;
+	text-align: center;
+}
+.vm-bt {
+	color: #fff;
+	font-size: 85.7%;
+	background: -moz-linear-gradient(center top , #3c3c3c, #111) repeat scroll 0 0 #111;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0,#3c3c3c), color-stop(1,#111));
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#3c3c3c',EndColorStr='#111')";
+	background-color: #111;
+}
+.vm-bt a {
+	color: #fff;
+	text-decoration: none;
+}

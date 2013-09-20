@@ -1,0 +1,109 @@
+/**
+ * Grids Style
+ * @Author: honglei@live.com
+ * @Style Group: Grid
+ */
+.vg-item,
+.vg-1-2,
+.vg-1-3,
+.vg-2-3,
+.vg-1-4,
+.vg-3-4,
+.vg-1-5,
+.vg-2-5,
+.vg-3-5,
+.vg-4-5 {
+	float: left;
+}
+
+.vg-2:after,
+.vg-3:after,
+.vg-4:after,
+.vg-5:after,
+.vg-6:after,
+.vg-7:after,
+.vg-8:after {
+	content:'.';
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;
+}
+
+ul.vg-2,
+ol.vg-2,
+ul.vg-3,
+ol.vg-3,
+ul.vg-4,
+ol.vg-4,
+ul.vg-5,
+ol.vg-5 {
+	margin: 0;
+}
+
+ul.vg-2 li,
+ol.vg-2 li,
+ul.vg-3 li,
+ol.vg-3 li,
+ul.vg-4 li,
+ol.vg-4 li,
+ul.vg-5 li,
+ol.vg-5 li {
+	float: left;
+	margin: 0;
+	list-style: none;
+}
+
+.vg-1-2,
+.vg-2 .vg-item,
+.vg-2 .vm-btn,
+ul.vg-2 li,
+ol.vg-2 li {
+	width: 50%;
+}
+.vg-1-3,
+.vg-3 .vg-item,
+.vg-3 .vm-btn,
+ul.vg-3 li,
+ol.vg-3 li {
+	width: 33.333%;
+}
+.vg-1-4,
+.vg-4 .vg-item,
+.vg-4 .vm-btn,
+ul.vg-4 li,
+ol.vg-4 li {
+	width: 25%;
+}
+.vg-1-5,
+.vg-5 .vg-item,
+.vg-5 .vm-btn,
+ul.vg-5 li,
+ol.vg-5 li {
+	width: 20%;
+}
+.vg-6 .vm-btn {
+	width: 16.666%;
+}
+.vg-7 .vm-btn {
+	width: 14.285%;
+}
+.vg-8 .vm-btn {
+	width: 12.5%;
+}
+
+.vg-2-3 {
+	width: 66.666%;
+}
+.vg-3-4 {
+	width: 75%;
+}
+.vg-2-5 {
+	width: 40%;
+}
+.vg-3-5 {
+	width: 60%;
+}
+.vg-4-5 {
+	width: 80%;
+}

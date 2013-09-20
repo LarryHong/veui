@@ -1,0 +1,111 @@
+/**
+ * Icons Style
+ * @Author: honglei@live.com
+ * @Style Group: Plus
+ */
+
+//Css3 Icons
+.vp-cicon {
+	&:after {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+	}
+}
+.vp-cicon-arrowd {
+	&:after {
+		border: 0 solid $cicon_color;
+		border-width: 0 0 3px 3px;
+		width: $cicon_arrow_size;
+		height: $cicon_arrow_size;
+		margin-top: -$cicon_arrow_size
+	}
+}
+.vp-cicon-arrowd {
+	@extend .vp-cicon-arrowd;
+	&:after {
+		@include transform-rotate(-45);
+	}
+}
+.vp-cicon-arrowu {
+	@extend .vp-cicon-arrowd;
+	&:after {
+		@include transform-rotate(135);
+	}
+}
+.vp-cicon-arrowr {
+	@extend .vp-cicon-arrowd;
+	&:after {
+		@include transform-rotate(-135);
+	}
+}
+.vp-cicon-grey-arrowd {
+	@extend .vp-cicon-arrowd;
+	&:after {
+		border-color: $cicon_grey_color;
+	}
+}
+.vp-cicon-grey-arrowu {
+	@extend .vp-cicon-arrowu;
+	&:after {
+		border-color: $cicon_grey_color;
+	}
+}
+.vp-cicon-grey-arrowr {
+	@extend .vp-cicon-arrowr;
+	&:after {
+		border-color: $cicon_grey_color;
+	}
+}
+ 
+//Image Icons
+.vp-icon {
+	display: inline-block;
+	width: $icon_round_radius*2;
+	height: $icon_round_radius*2;
+	text-indent: -9999px;
+	margin-top: 0-$icon_round_radius;
+}
+.vp-icon-round {
+	@extend .vp-icon;
+	border-radius: 1em;
+	background: $icon_round_background_color;
+}
+.vp-icon-dot {
+	@extend .vp-icon;
+	width: $icon_dot_radius*2;
+	height: $icon_dot_radius*2;
+	margin-top: 0-$icon_dot_radius;
+	@include background($icon_dot_background_color, $icon_dot_background_type);
+	border: $icon_dot_border;
+	border-radius: 1em;
+	margin-left: 5px;
+}
+.vp-icon-ft10 {
+	margin-top: -10px;
+}
+.vp-icon-square {
+	width: 29px;
+	height: 29px;
+	margin-top: -14px;
+}
+
+.vp-icon-plus {
+	background-image: url($icon_img);
+	background-repeat: no-repeat;
+}
+
+$i : 0;
+@each $key in plus, minus, delete, right, arrowl, arrowr, arrowu, arrowd, refresh, forward, back, grid, setting, star, alert, info, home, search {
+	.vp-icon-#{$key} {
+		@extend .vp-icon-plus;
+		background-position: 0-$i*$icon_img_spacing 0;
+	}
+	.vp-icon-grey-#{$key} {
+		@extend .vp-icon-plus;
+		background-position: 0-$i*$icon_img_spacing -50px;
+	}
+	$i : $i+1;
+}
